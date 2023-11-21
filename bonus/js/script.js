@@ -22,20 +22,45 @@ const container = document.querySelector(".container");
 //* ci creiamo un ciclo che va da 1 a 100 numeri
 
 for (let i = 1; i <= 100; i++) {
+
+    const square = document.createElement("div");
+    // aggiungo classe square
+    square.classList.add("square");
+    // aggiungo il div al container
+    container.append(square);   
     
-    if (i % 3 === 0 && i % 5 === 0){
+        
+     // numeri divisibili per 3 e per 5
+     if (i % 3 === 0 && i % 5 === 0){
         let fizzbuzz = "fizzbuzz";
         console.log(fizzbuzz);
+        // aggiungo contenuto al div
+       square.append(fizzbuzz);
+        // aggiungo classe fzbz
+        square.classList.add("fizzbuzz");
     }
+
+
     else if(i % 3 === 0) {
         let fizz = "fizz";
         console.log(fizz);
+        square.append(fizz);
+        // aggiungo classe fizz
+        square.classList.add("fizz");
     }
+        
     else if(i % 5 === 0) {
         let buzz = "buzz";
         console.log(buzz);
+        square.append(buzz);
+        // aggiungo classe buzz
+        square.classList.add("buzz");
     }
+        
     else{
         console.log(i);
+        square.append(i);
+        // aggiungo classe other
+        square.classList.add("other");
     }
 }
