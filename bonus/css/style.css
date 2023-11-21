@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30ox;
+    gap: 30px;
 }
 
 
@@ -26,5 +26,20 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #1389b2;
+}
+
+.fizz {
+    background-color: #0cd6a1;
+  }
+  
+.buzz {
+    background-color: #ffd166;
+}
+  
+.fizzbuzz {
+    background-color: #f0466f;
+}
+
+.other {
+    background-color: #1389b2
 }
