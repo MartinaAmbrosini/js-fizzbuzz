@@ -1,4 +1,4 @@
-Consegna:
+// Consegna :
 // Scrivi un programma che stampi in console i numeri da 1 a 100, ma che per i multipli di 3 stampi “Fizz”, al posto del numero e per i multipli di 5 stampi “Buzz”. Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 // Prima di partire a scrivere codice poniamoci qualche domanda:
@@ -21,30 +21,32 @@ const container = document.querySelector(".container");
 
 //* ci creiamo un ciclo che va da 1 a 100 numeri
 
-for (let numero = 1; numero <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
    
     const square = document.createElement("div");
 
     square.classList.add("square");
 
-    square.append("i");
+    square.append(i);
+
+    container.append(square)
 
     console.log(square)
 
 
-    // //* se i numeri sono multipli di 3 e 5 stampiamo "FizzBuzz"
+    //* se i numeri sono multipli di 3 e 5 stampiamo "FizzBuzz"
   
-    // if (numero % 3 == 0 && numero % 5 == 0) {
-    //   output = "FizzBuzz";
-    //   //* Altrimenti se i numeri sono multipli di 3 stampiamo "Fizz"
-    // } else if (numero % 3 == 0) {
-    //   output = "Fizz";
+    if (i % 3 == 0 && i % 5 == 0) {
+      output = "FizzBuzz";
+      //* Altrimenti se i numeri sono multipli di 3 stampiamo "Fizz"
+    } else if (i % 3 == 0) {
+      output = "Fizz";
   
-    //   //* Altrimenti se i numeri sono multipli di 5 stampiamo "Buzz"
-    // } else if (numero % 5 == 0) {
-    //   output = "Buzz";
+      //* Altrimenti se i numeri sono multipli di 5 stampiamo "Buzz"
+    } else if (i % 5 == 0) {
+      output = "Buzz";
   
-    //   //* Altrimenti stampiamo il numero
-    // }
+      //* Altrimenti stampiamo il numero
+    }
 
 };
